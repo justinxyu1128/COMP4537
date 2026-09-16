@@ -23,6 +23,7 @@ labsRouter.get('/1', (req, res) => {
 
 
 app.use('/COMP4537', comp4537Router);
+app.use(express.static(path.join(__dirname, 'COMP4537', 'labs', '1')));
 comp4537Router.use('/labs', labsRouter);
 
 let port = 10000;

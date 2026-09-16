@@ -1,0 +1,57 @@
+.btn {
+    height: 5em;
+    width: 10em;
+    margin: 2em;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.game-btn {
+    position: fixed;
+}
+
+.error-text {
+    color: red;
+}
+
+#score-board {
+    display: flex;
+    flex-direction: column;
+}
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    color: transparent;
+}
+
+.red {
+    background-color: #ffadad;
+}
+
+.orange {
+    background-color: #ffd6a5;
+}
+
+.yellow {
+    background-color: #fdffb6;
+}
+
+.green {
+    background-color: #caffbf;
+}
+
+.blue {
+    background-color: #9bf6ff;
+}
+
+.indigo {
+    background-color: #a0c4ff;
+}
+
+.violet {
+    background-color: #bdb2ff;
+}
