@@ -21,9 +21,14 @@ labsRouter.get('/1', (req, res) => {
     res.sendFile(path.join(__dirname, 'COMP4537', 'labs', '1', 'index.html'));
 });
 
+labsRouter.get('/2', (req, res) => {
+    res.sendFile(path.join(__dirname, 'COMP4537', 'labs', '2', 'index.html'));
+});
+
 
 app.use('/COMP4537', comp4537Router);
-app.use(express.static(path.join(__dirname, 'COMP4537', 'labs', '1')));
+// app.use(express.static(path.join(__dirname, 'COMP4537', 'labs', '1')));
+app.use('/static', express.static(path.join(__dirname, 'COMP4537', 'labs')));
 comp4537Router.use('/labs', labsRouter);
 
 let port = 10000;
